@@ -248,7 +248,7 @@ const questions = [{
         },
     ]
 }, {
-    question: "What was the name of Snape's father",
+    question: "What was the name of Snape's Muggle Father?",
     answers: [{
             text: "Thomas",
             correct: false
