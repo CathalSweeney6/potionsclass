@@ -1,0 +1,640 @@
+/* Background layout  */
+
+body {
+    background-image: url(../images/gamebackground.jpeg);
+    background-size: cover;
+    font-family: "Labo", sans-serif;
+    color: goldenrod;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Quiz logo */
+
+.logo {
+    width: auto;
+    height: auto;
+    padding-right: 5px;
+    margin-bottom: 34px;
+    overflow: hidden;
+}
+
+/* box div layout */
+
+.welcome-area {
+    background-color: black;
+    box-sizing: border-box;
+    width: 75%;
+    height: 50vh;
+    max-height: 600px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 6px;
+    border-color:purple;
+    border-radius: 10px;
+    padding: 1%;
+    box-shadow: 0 0 10px 10px purple;
+}
+
+.welcome-area a:link {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.welcome-area a:active {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.welcome-area a:visited {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.welcome-area a:hover {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+/* Welcome message */
+
+#welcome {
+    font-family: "Instrument Serif";
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #dcdbc4;
+    letter-spacing: 4px;
+    line-height: 2;
+}
+
+/* Button styling  */
+
+#beginquiz {
+    font-size: 60px;
+    font-family: "Instrument Serif";
+    font-weight: bolder;
+    background: #217452;
+    border: 6px solid silver;
+    padding: 6px;
+    margin:30px 0;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.1s;
+    letter-spacing: 10px;
+    box-shadow: 0 0 10px 10px silver;
+}
+
+#beginquiz:hover {
+    background: limegreen;
+    color: #217452;
+    border: 6px solid limegreen;
+    box-shadow: 0 0 10px 10px limegreen;
+}
+
+
+
+/* Game layout */
+
+.game-area {
+    background-color: black;
+    box-sizing: border-box;
+    width: 98%;
+    height: 65vh;
+    max-height: 600px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 6px;
+    border-color: purple;
+    border-radius: 10px;
+    padding: 1%;
+    box-shadow: 0 0 10px 10px purple;
+}
+
+/* Quiz element stylings */
+
+.quiz {
+    padding: 20px 0;
+}
+
+
+.game-area h1 {
+    font-size: 20px;
+    color: #dcdbc4;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 5px;
+}
+
+.answer-variables {
+    background: silver;
+    color: black;
+    font-size: 25px;
+    font-weight: 550;
+    width: 98%;
+    border: 3px solid silver;
+    padding: 6px;
+    margin: 10px 0 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.1s;
+    letter-spacing: 6px;
+    box-shadow: 0 0 10px 10px silver ;
+}
+
+.answer-variables:hover:not([disabled]) {
+    cursor: pointer;
+    background-color: silver;
+    color: black;
+    box-shadow: 0 0 10px 10px #217452;
+    transform: translateY(0.1rem);
+    transition: transform 150ms;
+    border: 3px solid silver;
+}
+
+/* Stops the user from selecting more than one answer */
+
+.answer-variables:disabled {
+    cursor: no-drop;
+}
+
+/* Correct answer stylings */
+
+.correct {
+    background:  #217452;
+    border: 3px solid #217452;
+    box-shadow: 0 0 10px 10px #355e4c;
+    color: silver;
+    cursor: no-drop;
+}
+
+/* Incorrect answer stylings */
+
+.incorrect {
+    background: #7e222d;
+    border: 3px solid #7e222d;
+    box-shadow: 0 0 10px 10px  #7e222d;
+    color: #cda462;
+    cursor: no-drop;
+}
+
+
+/* Stylings for the Next Button, when styled as the "Play Again" button. */
+
+
+#next-button {
+    background: #217452;
+    color: silver;
+    font-family: "Instrument Serif";
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    width: 355px;
+    border: 2px solid darkgray;
+    border-radius: 4px;
+    padding: 0px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display: none;
+    box-shadow:0 0.4rem 1.4rem 0 silver;
+}
+
+
+#next-button:hover {
+    background: limegreen;
+    color: #217452;
+    box-shadow: 0 0.4rem 1.4rem 0 limegreen;
+    border: 2px solid limegreen;
+}
+
+/* Stylings for the Home Button. */
+
+
+#home-btn, #youtube-btn {
+    background: black;
+    color: goldenrod;
+    border: 3px solid goldenrod;
+    font-family: "Instrument Serif";
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 4px;
+    width: 355px;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display: block;
+    margin-top: 574px;
+}
+
+
+#home-btn:hover {
+    background: goldenrod;
+    color: white;
+    box-shadow: 0 0.4rem 1.4rem 0 darkgray;
+    border: 2px solid goldenrod;
+}
+
+/* Music player display */
+
+#backgroundmusic {
+    display: none;
+}
+
+/* Bonus page stylings */
+
+#bereyt-btn {
+    text-decoration: none;
+    background: #217452;
+    color: silver;
+    font-family: "Instrument Serif";
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    width: 330px;
+    border: 2px solid darkgray;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display: block;
+}
+
+
+#bereyt-btn:hover {
+    background: limegreen;
+    color: #217452;
+    box-shadow: 0 0.4rem 1.4rem 0 darkgray;
+    border: 2px solid goldenrod;
+}
+
+/* Bonus background gif stylings */
+
+.bereyt {
+    background-image: url("../images/bereyt.gif");
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+}
+
+/* Media queries */
+
+
+@media screen and (max-width: 768px) {
+
+    .game-area h1 {
+        font-size: 16px;
+    }
+
+    .bereyt {
+        height: 49vh;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 743px) and (min-width:663px) {
+
+    #welcome {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 662px) and (min-width:426px) {
+
+    .welcome-area,
+    .game-area,
+    .score-area {
+        height: 70vh;
+    }
+    .logo {
+        height: 100px;
+        width: 400px;
+        margin-top: 0px;
+    }
+
+    #welcome {
+        font-size: 34px;
+    }
+
+    .answer-variables {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 657px) and (min-width:597px) {
+
+    #welcome {
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (max-width: 597px) and (min-width:321px) {
+
+    #welcome {
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 596px) and (min-width:426px) {
+
+    #welcome {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 571px) and (min-width:426px) {
+
+    #welcome {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .logo {
+        width: 364px;
+        height: 84px;
+        margin-bottom: 50px;
+        margin-top: 0px;
+    }
+
+    .welcome-area,
+    .game-area,
+    .score-area {
+        width: 100%;
+        height: 55vh;
+    }
+
+
+    #welcome {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    #beginquiz {
+        font-size: 150px;
+    }
+
+    .game-area h1 {
+        font-size: 9px;
+        margin-top: 4px;
+    }
+
+    .answer-variables {
+        font-size: 12px;
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+    #next-button {
+        font-size: 20px;
+    }
+
+
+    #bereyt-btn {
+        font-size: 40px;
+    }
+
+    .bereyt {
+        height: 26vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
+
+@media screen and (max-width: 390px) and (min-width:376px) {
+
+    .game-area h1 {
+        font-size: 8px;
+    }
+
+    .answer-variables {
+        font-size: 7px;
+    }
+
+    #bereyt-btn {
+        width: 316px;
+    }
+
+    #next-button {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 375px) and (min-width:360px) {
+
+    .bereyt {
+        height: 23vh;
+    }
+
+    #home-btn {
+        width: 330px;
+    }
+
+    #bereyt-btn {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .logo {
+        width: 324px;
+        margin-top: 0px;
+    }
+
+    .welcome-area,
+    .game-area,
+    .score-area {
+        width: 100%;
+        height: 60vh;
+    }
+
+    #welcome {
+        font-size: 22px;
+    }
+
+    #beginquiz {
+        font-size: 180px;
+    }
+
+    .game-area h1 {
+        font-size: 8px;
+    }
+
+    #next-button {
+        width: 335px;
+    }
+
+    #bereyt-btn {
+        width: 308px;
+        font-size: 36px;
+    }
+
+    #home-btn {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 370px) and (min-width:320px) {
+
+    #next-button {
+        width: 275px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .logo {
+        margin-top: 0px;
+    }
+
+    .welcome-area {
+        height: 55vh;
+    }
+
+    .game-area,
+    .score-area {
+        width: 100%;
+        height: 70vh;
+    }
+
+    #welcome {
+        font-size: 20px;
+    }
+
+    .game-area h1 {
+        font-size: 11px;
+        margin-top: 25px;
+    }
+
+    .answer-variables {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    #bereyt-btn {
+        width: 296px;
+        font-size: 60px;
+    }
+
+    #home-btn {
+        width: 276px;
+    }
+}
+
+@media screen and (max-width: 397px) and (min-width:321px) {
+
+    #welcome {
+        font-size: 18px;
+    }
+
+    #bereyt-btn {
+        width: 250px;
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 390px) and (min-width:375px) {
+
+    #bereyt-btn {
+        font-size: 40px;
+    }
+
+    #next-button {
+        width: 275px;
+    }
+}
+
+
+@media screen and (max-width: 340px) and (min-width:321px) {
+
+    .welcome-area,
+    .game-area,
+    .score-area {
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 339px) and (min-width:321px) {
+
+    .welcome-area,
+    .game-area,
+    .score-area {
+        width: 102%;
+    }
+
+    #welcome {
+        font-size: 16px;
+    }
+
+    #bereyt-btn {
+        width: 258px;
+        font-size: 36px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .logo {
+        width: 320px;
+        margin-top: 0px;
+    }
+
+    .welcome-area,
+    .game-area,
+    .score-area {
+        width: 104%;
+        height: 60vh;
+    }
+
+    #welcome {
+        font-size: 17px;
+    }
+
+    #beginquiz {
+        font-size: 145px;
+    }
+
+    .game-area h1 {
+        font-size: 9px;
+        margin-top: 4px;
+    }
+
+    .answer-variables {
+        font-size: 8px;
+    }
+
+    #bereyt-btn {
+        width: 258px;
+        font-size: 36px;
+    }
+
+
+    .bereyt {
+        height: 19vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    #home-btn {
+        width: 256px;
+        margin-top: 504px;
+    }
+}
