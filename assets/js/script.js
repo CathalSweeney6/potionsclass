@@ -243,7 +243,7 @@ const questions = [{
             correct: false
         },
         {
-            text: "Chemicals, Smoke, and Old Books",
+            text: "Chemicals, Smoke, And Old Books",
             correct: false
         },
     ]
