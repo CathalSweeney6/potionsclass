@@ -39,7 +39,7 @@ const questions = [{
         },
     ]
 }, {
-    question: "What Defensive Spell Did Snape Indirectly Teach Harry During Duelling Club?",
+    question: "What Disarming Spell Did Snape Indirectly Teach Harry During Duelling Club?",
     answers: [{
             text: "Stupefy",
             correct: false
@@ -338,7 +338,7 @@ const questions = [{
             correct: true
         },
         {
-            text: "All Of My Money Goes To Deek",
+            text: "All Of My Money Goes To Deek!!",
             correct: false
         },
     ]
